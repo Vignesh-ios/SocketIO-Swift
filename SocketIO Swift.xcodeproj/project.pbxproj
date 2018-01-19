@@ -12,9 +12,11 @@
 		30F9AFE82011F89400957387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F9AFE62011F89400957387 /* Main.storyboard */; };
 		30F9AFEA2011F89400957387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F9AFE92011F89400957387 /* Assets.xcassets */; };
 		30F9AFED2011F89400957387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F9AFEB2011F89400957387 /* LaunchScreen.storyboard */; };
+		74B2CC2F8D1730FCC5FAEE51 /* Pods_SocketIO_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F32328A4A834CB0DC3D2858 /* Pods_SocketIO_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C2EF576C705DB088A6D9A0 /* Pods-SocketIO Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIO Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocketIO Swift/Pods-SocketIO Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		30F9AFDF2011F89400957387 /* SocketIO Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SocketIO Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F9AFE22011F89400957387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30F9AFE42011F89400957387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		30F9AFE92011F89400957387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F9AFEC2011F89400957387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30F9AFEE2011F89400957387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F32328A4A834CB0DC3D2858 /* Pods_SocketIO_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketIO_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6DC2B810C3A9BDF9051C84 /* Pods-SocketIO Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketIO Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocketIO Swift/Pods-SocketIO Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B2CC2F8D1730FCC5FAEE51 /* Pods_SocketIO_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				30F9AFE12011F89400957387 /* SocketIO Swift */,
 				30F9AFE02011F89400957387 /* Products */,
+				368D52CCF632A70C5DAAE2F3 /* Pods */,
+				CF6FFD943819B634616B345F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "SocketIO Swift";
 			sourceTree = "<group>";
 		};
+		368D52CCF632A70C5DAAE2F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02C2EF576C705DB088A6D9A0 /* Pods-SocketIO Swift.debug.xcconfig */,
+				DB6DC2B810C3A9BDF9051C84 /* Pods-SocketIO Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF6FFD943819B634616B345F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F32328A4A834CB0DC3D2858 /* Pods_SocketIO_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30F9AFF12011F89400957387 /* Build configuration list for PBXNativeTarget "SocketIO Swift" */;
 			buildPhases = (
+				258DF2B94A5706E9182F7BDB /* [CP] Check Pods Manifest.lock */,
 				30F9AFDB2011F89400957387 /* Sources */,
 				30F9AFDC2011F89400957387 /* Frameworks */,
 				30F9AFDD2011F89400957387 /* Resources */,
+				DE6BA88C5F0E610F211D5AAC /* [CP] Embed Pods Frameworks */,
+				97DD42A359008F96D49E2C85 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		258DF2B94A5706E9182F7BDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocketIO Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97DD42A359008F96D49E2C85 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocketIO Swift/Pods-SocketIO Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6BA88C5F0E610F211D5AAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocketIO Swift/Pods-SocketIO Swift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocketIO Swift/Pods-SocketIO Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30F9AFDB2011F89400957387 /* Sources */ = {
@@ -272,6 +355,7 @@
 		};
 		30F9AFF22011F89400957387 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C2EF576C705DB088A6D9A0 /* Pods-SocketIO Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +371,7 @@
 		};
 		30F9AFF32011F89400957387 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB6DC2B810C3A9BDF9051C84 /* Pods-SocketIO Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
